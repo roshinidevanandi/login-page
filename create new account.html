@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <img src="../pics/images/facebook.png" height="120"><hr>
+    <h2>CREATEVNEW ACCOUNT</h2>
+    <form>
+        <label><b>Name:</b></label>
+        <input
+          type="text"
+          name="fname"
+          id="fname"
+          placeholder="First name"
+          size="20"
+          required
+        />
+        <input
+          type="text"
+          name="sname"
+          id="sname"
+          placeholder="Second name"
+          size="20"
+          required
+        />
+  
+        <br /><br />
+        <label><b>Phone Number:</b></label>
+  
+        <input
+          type="tel"
+          name="namber"
+          id="number"
+          pattern="[0-9]{4,10}"
+          placeholder="(000) 000-0000"
+          required
+        />
+        <br /><br />
+        <label><b> Email: </b></label>
+        <input type="email" name="mail" id="mail" autofocus placeholder="email" required/><br /><br />
+        <label><b>Create Your Password:</b></label>
+        <input type="password" value="FakePSW" id="myInput">
+        <pre>                       <input type="checkbox" onclick="myFunction()">Show Password</pre>
+        
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myInput");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script><br>
+        <label><b>Confirm your Password:</b></label>
+        <input type="password" name="password" id="password" placeholder="xxxx" required><br><br>
+        <label><b>DOB:</b></label>
+        <input type="date"><br><br>
+        <label><b>Gender:</b></label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Femail
+        <input type="radio" name="gender" value="Others">Others<br><br>
+        <input type="submit" value="Sign Up" formaction="login page.html">
+</body>
+</html>
